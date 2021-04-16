@@ -35,7 +35,7 @@ if __name__ == '__main__':
     if not os.path.exists(plt_model_path):
         os.makedirs(plt_model_path)
 
-    original_model = ILPnet(input_shape=(img_w, img_h, 1),debug=True)
+    original_model = ILPRnet(input_shape=(img_w, img_h, 1),debug=True)
 
     original_model.summary()
     plot_model(original_model, to_file=plt_model_path+'/ILPNET.png')
